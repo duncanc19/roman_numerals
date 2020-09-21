@@ -14,7 +14,9 @@ class Roman_Numerals
         9 => "IX"
     }
 
-    if num >= 50
+    if num >= 60
+      "LX" + number_lookup[num % 10]
+    elsif num >= 50
         "L" + number_lookup[num % 10]
     elsif num >= 40
         "XL" + number_lookup[num % 10]
