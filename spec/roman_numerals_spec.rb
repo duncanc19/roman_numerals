@@ -55,4 +55,9 @@ describe Roman_Numerals do
     expect(Roman_Numerals.new.convert(43)).to eq("XLIII")
     expect(Roman_Numerals.new.convert(48)).to eq("XLVIII")
   end
+  it "returns L + single digit num when passed 50-59" do
+    expect(Roman_Numerals.new.convert(53)).to eq("LIII")
+    expect(Roman_Numerals.new.convert(58)).to eq("LVIII")
+  end
+
 end
