@@ -15,6 +15,7 @@ class Roman_Numerals
     }
 
     decimal_lookup = {
+      0 => "",
       10 => "X",
       20 => "XX",
       30 => "XXX",
@@ -26,11 +27,8 @@ class Roman_Numerals
       90 => "XC"
     }
     
-    if num >= 10
-      decimal_lookup[num.floor(-1)] + single_digit_lookup[num % 10]
-    else
-      single_digit_lookup[num]
-    end
+    decimal_lookup[num.floor(-1)] + single_digit_lookup[num % 10]
+    
   end 
 
 end
