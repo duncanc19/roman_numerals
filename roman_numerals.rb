@@ -29,7 +29,8 @@ class Roman_Numerals
 
     hundreds_lookup = {
       100 => "C",
-      200 => "CC"
+      200 => "CC",
+      300 => "CCC"
     }
     if num < 100
       decimal_lookup[num.floor(-1)] + single_digit_lookup[num % 10]

@@ -65,7 +65,8 @@ describe Roman_Numerals do
 
   hundreds_conversion_tests = {
     100 => "C",
-    200 => "CC"
+    200 => "CC",
+    300 => "CCC"
   }
 
   hundreds_conversion_tests.each do |num, roman|
