@@ -64,7 +64,8 @@ describe Roman_Numerals do
   end
 
   hundreds_conversion_tests = {
-    100 => "C"
+    100 => "C",
+    200 => "CC"
   }
 
   hundreds_conversion_tests.each do |num, roman|
