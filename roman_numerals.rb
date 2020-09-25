@@ -28,6 +28,7 @@ class Roman_Numerals
     }
 
     hundreds_lookup = {
+      0 => "",
       100 => "C",
       200 => "CC",
       300 => "CCC",
@@ -40,10 +41,8 @@ class Roman_Numerals
     }
     if num < 100
       decimal_lookup[num.floor(-1)] + single_digit_lookup[num % 10]
-    elsif num == 120
-      "CXX"
     else 
-      hundreds_lookup[num]
+      hundreds_lookup[num.floor(-2)] + decimal_lookup[(num % num.floor(-2)).floor(-1)] + single_digit_lookup[num % num.floor(-1)]
     end
   end 
 
