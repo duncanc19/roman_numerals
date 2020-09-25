@@ -26,9 +26,15 @@ class Roman_Numerals
       80 => "LXXX",
       90 => "XC"
     }
-    
-    decimal_lookup[num.floor(-1)] + single_digit_lookup[num % 10]
-    
+
+    hundreds_lookup = {
+      100 => "C"
+    }
+    if num < 100
+      decimal_lookup[num.floor(-1)] + single_digit_lookup[num % 10]
+    else 
+      "C"
+    end
   end 
 
 end

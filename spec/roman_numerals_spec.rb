@@ -63,4 +63,16 @@ describe Roman_Numerals do
     end
   end
 
+  hundreds_conversion_tests = {
+    100 => "C"
+  }
+
+  hundreds_conversion_tests.each do |num, roman|
+    describe "when #{num} passed in" do
+      it "returns #{roman}" do
+        expect(Roman_Numerals.new.convert(num)).to eq(roman)
+      end
+    end
+  end
+
 end
