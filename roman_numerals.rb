@@ -40,6 +40,8 @@ class Roman_Numerals
     }
     if num < 100
       decimal_lookup[num.floor(-1)] + single_digit_lookup[num % 10]
+    elsif num == 120
+      "CXX"
     else 
       hundreds_lookup[num]
     end

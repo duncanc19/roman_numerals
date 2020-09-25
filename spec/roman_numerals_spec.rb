@@ -65,6 +65,7 @@ describe Roman_Numerals do
 
   hundreds_conversion_tests = {
     100 => "C",
+    120 => "CXX",
     200 => "CC",
     300 => "CCC",
     400 => "CD",
